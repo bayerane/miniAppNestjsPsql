@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Gestion des Clients</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>À propos de l'application</h1>
+        
+        <nav>
+            <a href="/">Accueil</a>
+            <a href="/clients">Clients</a>
+            <a href="/about">À propos</a>
+        </nav>
+    </header>
+    <main> 
+        <div class="content">
+            <div class="section">
+                <h2>Description du projet</h2>
+                <p>Cette application de gestion des clients a été développée avec <strong>Nest.js</strong> pour répondre aux besoins d'une petite entreprise souhaitant gérer sa clientèle de manière simple et efficace.</p>
+                <p>L'application propose une interface web intuitive pour la gestion des clients ainsi qu'une API REST complète pour l'intégration avec d'autres systèmes.</p>
+            </div>
+
+            <div class="section">
+                <h2>Fonctionnalités</h2>
+                <p>L'application offre les fonctionnalités suivantes :</p>
+                <ul>
+                    <li>Ajout de nouveaux clients avec nom, email et téléphone optionnel</li>
+                    <li>Consultation de la liste complète des clients</li>
+                    <li>Modification des informations d'un client existant</li>
+                    <li>Suppression d'un client</li>
+                    <li>Interface web moderne et responsive</li>
+                    <li>API REST pour l'intégration avec d'autres applications</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Technologies utilisées</h2>
+                <div class="tech-stack">
+                    <div class="tech-item">
+                        <h3>Nest.js</h3>
+                        <p>Framework Node.js pour le développement d'applications server-side évolutives.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3>TypeScript</h3>
+                        <p>Langage de programmation typé basé sur JavaScript.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3>PostgreSQL</h3>
+                        <p>Base de données relationnelle pour la persistance des données.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3>TypeORM</h3>
+                        <p>ORM pour TypeScript et JavaScript pour la gestion de la base de données.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3>Class Validator</h3>
+                        <p>Validation des données d'entrée avec des décorateurs.</p>
+                    </div>
+                    <div class="tech-item">
+                        <h3>HTML/CSS/JavaScript</h3>
+                        <p>Technologies front-end pour l'interface utilisateur.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>API REST Endpoints</h2>
+                <p>L'application expose les endpoints suivants :</p>
+                <div class="api-endpoints">
+                    <div class="endpoint">
+                        <span class="method">GET</span> /api/clients - Récupère tous les clients
+                    </div>
+                    <div class="endpoint">
+                        <span class="method">GET</span> /api/clients/:id - Récupère un client par son ID
+                    </div>
+                    <div class="endpoint">
+                        <span class="method post">POST</span> /api/clients - Crée un nouveau client
+                    </div>
+                    <div class="endpoint">
+                        <span class="method put">PUT</span> /api/clients/:id - Met à jour un client
+                    </div>
+                    <div class="endpoint">
+                        <span class="method delete">DELETE</span> /api/clients/:id - Supprime un client
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Gestion des erreurs</h2>
+                <p>L'application gère les erreurs suivantes :</p>
+                <ul>
+                    <li><strong>400 Bad Request</strong> : Données invalides (nom ou email manquant)</li>
+                    <li><strong>404 Not Found</strong> : Client non trouvé</li>
+                    <li><strong>500 Internal Server Error</strong> : Erreur serveur</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Développement</h2>
+                <p>Ce projet a été développé en respectant les meilleures pratiques de développement avec Nest.js :</p>
+                <ul>
+                    <li>Architecture modulaire et séparation des responsabilités</li>
+                    <li>Validation des données avec des DTOs</li>
+                    <li>Gestion des erreurs avec des exceptions personnalisées</li>
+                    <li>Code typé avec TypeScript</li>
+                    <li>Tests unitaires et d'intégration</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mini Application Nest.js</p>
+    </footer>
+</body>
+</html>
